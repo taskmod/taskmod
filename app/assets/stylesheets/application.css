@@ -109,8 +109,11 @@ a:hover {
 #logo a {
 	border: none;
 	background: none;
-	text-decoration: none;
+	text-transform:uppercase;
 	color: #FFFFFF;
+	text-align:left;
+	margin:-90px;
+	
 }
 /* Menu */
 #menu {
