@@ -21,11 +21,15 @@ body {
 	font-size: 14px;
 	color: #A19D9A;
 }
+
+}
+
 h1, h2, h3 {
 	margin: 0;
 	padding: 0;
 	font-weight: normal;
-	color: #3E3530;
+	color: #fff;
+	
 }
 h1 {
 	font-size: 2em;
@@ -36,17 +40,27 @@ h2 {
 h3 {
 	font-size: 1.6em;
 }
-p, ul, ol {
-	margin-top: 0;
+ul, ol {
+	margin-top: 10px;
 	line-height: 180%;
 }
-ul, ol {
+p, ul, ol {
+	
 }
+/*submenu*/
+ul , ol{
+	font-size: 14px;
+	font:Georgia, "Times New Roman", Times, serif;
+	text-decoration: none;
+	color: #EEEEEE;
+}
+	
 a {
 	text-decoration: none;
-	color: #339CCB;
+	color: #0000;
 }
 a:hover {
+	background-color: #666;
 }
 #wrapper {
 	margin: 0 auto;
@@ -55,38 +69,42 @@ a:hover {
 /* Header */
 #header-wrapper {
 	height: 100px;
-	background: #1582AB;
-	border-bottom: 10px solid #2AA1CC;
+	background: #666;
+	border-bottom: 10px solid #999;
 }
 #header {
 	width: 950px;
 	margin: 0 auto;
 	padding: 0px 0px 0px 30px;
 }
-/* Logo */
+/* Logo:nome:task manager */
 #logo {
 	float: left;
 	width: 350px;
-	margin: 0;
+	margin: 10px;
 	padding: 0;
 	color: #000000;
+	margin-top:-10px;
 }
 #logo h1, #logo p {
 }
+/*logo2:nome: gerenciador de atividades*/
 #logo h1 {
 	margin-left: 0px;
-	padding: 0p 0px 0px 80px;
+	padding: 0px 0px 30px;
 	letter-spacing: -1px;
 	text-transform: lowercase;
 	font-size: 3.8em;
 	background: redc;
 }
+/*logo 2*/
 #logo p {
 	margin: 0;
 	padding: 0px 0 0 0px;
 	font: normal 14px Georgia, "Times New Roman", Times, serif;
 	font-style: italic;
 	color: #FFFFFF;
+	margin-top:-45px;
 }
 #logo a {
 	border: none;
@@ -118,25 +136,38 @@ a:hover {
 	text-decoration: none;
 	text-align: center;
 	font-family: Arial, Helvetica, sans-serif;
-	font-size: 13px;
+	font-size: 14px;
 	font-weight: bold;
 	color: #FFFFFF;
 	border: none;
 }
 #menu a:hover, #menu .current_page_item a {
-	background: #2AA1CC;
+	background: #999;
 	text-decoration: none;
 }
 #menu .current_page_item a {
 }
 /* Page */
 #page {
-	width: 980px;
-	margin: 0 auto;
+	width: 990px;
+	margin:  auto;
 	padding: 0px 0px 0px 0px;
 }
-#page-bgtop {
-	padding: 20px 0px;
+
+#page-bgtop{
+	padding:  3px;
+	width:990px;
+	margin:auto;
+	margin-top:150px;
+	
+}
+
+#page-menu{
+	padding: 10px 0px;
+	float:right;
+	margin-right:-5px;
+	margin-top:-90px;
+	text: color #fff;
 }
 /* Content */
 .h1 {
@@ -151,42 +182,67 @@ a:hover {
 	padding-top: 20px;
 	font-size: 12px;
 	font-weight: bold;
+	
 }
+
+.categorias {
+	margin-top:-150px;
+	
+}
+
+.novacat {
+	margin-top:90px;
+	
+}
+
 /** Tables **/
 table {
 	background: #fff;
 	border-right:0;
-	clear: both;
+	clear:both;
 	color: #333;
 	margin-bottom: 10px;
-	width: 100%;
+	width:84%;
+	float: left;
+	margin-top:-100px;
+	margin-left:-50px;
 }
 th {
 	border:0;
 	border-bottom:2px solid #555;
-	text-align: left;
+	text-align: center;
 	padding:4px;
 }
+
 th a {
 	display: block;
 	padding: 2px 4px;
 	text-decoration: none;
+	
+	
 }
 th a.asc:after {
 	content: ' ⇣';
+		
 }
+
 th a.desc:after {
-	content: ' ⇡';
+	content: ' ⇡';	
 }
+
 table tr td {
 	background: #fff;
 	padding: 6px;
-	text-align: left;
+	text-align: center;
 	vertical-align: top;
 	border-bottom:1px solid #ddd;
+
 }
+	
 table tr:nth-child(2n) td {
 	background: #f5f5f5;
+	
+	
 }
 table .altrow td {
 	background: #f5f5f5;
@@ -194,8 +250,95 @@ table .altrow td {
 td.actions {
 	text-align: center;
 	white-space: nowrap;
+	margin-top:-90px;
 }
 table td.actions a {
 	margin: 0px 6px;
 	padding:2px 5px;
+	
+}
+.search{
+	margin-top:-150px;
+	float:right;
+	padding:6px;
+	display:block;
+	margin-right:-160px;
+}
+
+/*submenu*/
+.submenu li {
+    background: #999;
+    height:35px;
+    width:140px;
+    list-style:none;
+    padding-left:10px;
+    border-top:#fff solid;
+    border-bottom:#fff solid;
+    border-width:1px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  margin-top:1px;
+  	font-family: Arial, Verdana, sans-serif;
+	text-decoration: none;
+}
+
+.about1 {
+    background: #999;
+	height:10px;
+	background-size:28px;
+    background-position:5px;
+    padding-top:10px;
+    padding-left:4px;
+    width:300px;
+    opacity:0.9;
+}
+
+.submenu ul{
+	margin:0px;
+	-moz-border-radius: 5px;
+    border-radius: 5px;
+}
+
+.submenu {
+	font-family: Arial, Verdana;
+	font-weight:bold;
+    text-align:center;
+	color:#ffff;
+	text-decoration: none;
+	float:height;	
+}
+
+.submenu ul li:hover {
+	background-color:#999;
+	position:relative;
+}
+
+.submenu ul, li a {
+	color:#FFF;
+	text-decoration:none;
+	
+.submenu ul li:hover {
+	background-color:#999;
+	position:relative;
+}
+.submenu ul ul {
+	display:none;
+	position:absolute;
+	left:120px;
+	top:5px;
+	margin:height;
+}
+.submenu ul li:hover ul {
+	display:block;
+}
+.submenu ul ul li {
+	width:150px;
+	float:left;
+	display:inline;
+	border:none;
+    margin-top:3px;
+}
+.submenu ul ul li:hover {
+	text-decoration:none;
+	border:none;
 }
